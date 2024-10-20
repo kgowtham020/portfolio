@@ -4,3 +4,5 @@ technology used
 - HTML
 - JAVASCRIPT
 - CSS
+
+- responsive website
