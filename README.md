@@ -5,6 +5,6 @@ technology used
 - JAVASCRIPT
 - CSS
 
-- responsive website
+- responsive website with colourful gesture 
 
 with stylish assets and icons
