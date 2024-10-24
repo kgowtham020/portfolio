@@ -6,3 +6,5 @@ technology used
 - CSS
 
 - responsive website
+
+with stylish assets and icons
