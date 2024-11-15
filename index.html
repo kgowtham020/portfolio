@@ -115,21 +115,28 @@ content="width=device-width, initial-scale=1.0">
 
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email"
-            placeholder="Email">
+    <form action="https://formspree.io/f/meoqkbjb" method="POST" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <!-- Full Name and Email -->
+        <div class="input-box mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="fullName" placeholder="Full Name" required
+                   class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="email" name="email" placeholder="Email" required
+                   class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
-        <div class="input-box">
-            <input type="number"
-            placeholder="Phone Number">
-            <input type="text"
-            placeholder="Subject">
+    
+        <!-- Phone Number and Subject -->
+        <div class="input-box mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="number" name="phone" placeholder="Phone Number" required
+                   class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="text" name="subject" placeholder="Subject" required
+                   class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
-        <textarea name="" id="" cols="30" rows="10" 
-        placeholder="Your Message"></textarea>
+    
+        <!-- Message -->
+        <textarea name="message" placeholder="Your Message" rows="5" required
+                  class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"></textarea>
+    
+        <!-- Submit Button -->
         <input type="submit" value="Send Message" class="btn">
     </form>
 </section>
